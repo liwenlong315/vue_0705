@@ -1,44 +1,45 @@
-import MSite from '../pages/MSite/MSite'
-import Search from '../pages/Search/Search'
-import Order from '../pages/Order/Order'
-import Profile from '../pages/Profile/Profile'
-import Login from '../pages/Login/Login'
-export default [{
+import MSite from '../pages/MSite/MSite.vue'
+import Search from '../pages/Search/Search.vue'
+import Order from '../pages/Order/Order.vue'
+import Profile from '../pages/Profile/Profile.vue'
+import Login from '../pages/Login/Login.vue'
+
+export default [
+  {
     path: '/msite',
-    components: MSite,
+    component: MSite,
     meta: {
       isShowFooter: true
     }
   },
   {
     path: '/search',
-    components: Search,
+    component: Search,
     meta: {
       isShowFooter: true
     }
   },
   {
     path: '/order',
-    components: Order,
+    component: Order,
     meta: {
       isShowFooter: true
     }
   },
   {
     path: '/profile',
-    components: Profile,
+    component: Profile,
     meta: {
       isShowFooter: true
     }
   },
   {
     path: '/login',
-    components: Login,
-
+    component: Login
   },
+
   {
-    path: '/',
+    path: '/', // 项目根路径
     redirect: '/msite'
-
-  },
+  }
 ]
